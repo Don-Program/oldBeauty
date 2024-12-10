@@ -14,6 +14,7 @@
         /* Home */
         #home {
             display: block;
+            height: 100vh;
         }
 
         #home .home_img {
@@ -28,7 +29,12 @@
             width: 100%;
             border-radius: 0 0 5px 5px;
         }
-
+        #menu #menu_title, #menu_title span{
+            font-size: 1.7rem;
+        }
+        #menu #menu_link li a{
+            font-size: 1.5rem;
+        }
         /* Products */
         #products #products_items .product {
             width: 40%;
@@ -112,8 +118,16 @@
         #footer div:nth-child(all) {
             width: 50%;
         }
+        @media (max-width: 625px) {
+            #menu #menu_title, #menu_title span{
+                font-size: 1.5rem;
+            }
+            #menu #menu_link li a{
+                font-size: 1rem;
+            }
+        }
 
-        @media (max-width:500px){
+        @media (max-width:525px){
             /* menu */
             #menu{
                 display: none;
