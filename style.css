@@ -106,12 +106,14 @@
     margin-bottom: 20px;
 }
 #home .home_info p a{
-    background: var(--maron);
+    background: var(--white);
     font-size: 1.5rem;
     padding: 5px 20px;
     border-radius: 5px;
     color:var(--gris);
+    overflow: hidden;
     transition: all ease-in-out 0.5s;
+    box-shadow: 5px 5px 0 0 var(--maron);
     cursor: pointer;
 }
 #home .home_info p a:hover{
@@ -155,6 +157,7 @@
     background: var(--rouge);
     font-size: 1rem;
     padding: 0 10px;
+    box-shadow: 5px 5px 0 0 var(--jaune);
     transition: all ease 0.5s;
     cursor: pointer;
 }
@@ -219,6 +222,7 @@
 #contact_us .contact .contact_info p{
     font-size: 1.2rem;
     text-align: justify;
+    margin: 10px 0;
 }
 #contact_us .contact .contact_info,
 #contact_us .contact .contact_form{
@@ -235,9 +239,12 @@
     margin: 15px;
     text-transform: capitalize;
 }
-#contact_us .contact .contact_form input{
+#contact_us .contact .contact_form input,
+#contact_us .contact .contact_form textarea{
     padding: 5px;
     border: 0.5px solid var(--gris);
+    box-shadow: 5px 5px 0 0 var(--vert);
+    
 }
 #contact_us .contact .contact_form input::placeholder,
 #contact_us .contact .contact_form textarea::placeholder{
@@ -253,7 +260,7 @@
     width: 100%;
 }
 #contact_us .contact .contact_form .info input{
-    width: 37%;
+    width: 35.5%;
     font-size: 1rem;
 }
 #contact_us .contact .contact_form .checkbox{
@@ -278,13 +285,19 @@
     font-size: 1rem;
 }
 #contact_us .contact .contact_form input[type = "submit"]{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100px;
     color: var(--white);
     background: var(--vert);
     font-size: 1rem;
     padding: 10px;
+    box-shadow: 5px 5px 0 0 var(--maron);
     transition: all ease 0.5s;  
+    cursor: pointer;
+}
+#contact_us .contact .contact_form input[type = "submit"]:hover{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
 }
 /* footer */
 #footer{
